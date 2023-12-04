@@ -35,30 +35,24 @@ Run script using:
 
     python drowsiness_detect.py
 The algorithm for Eye Aspect Ratio was taken from pyimagesearch.com blog, by Adrian RoseBrock.
-**ALGORITHM**
+## ALGORITHM
 We use dlib for face detection and facial landmarks along with the eye aspect ratio calculation.
 1) we use open cv for importing the required libraries
 2) we uses the Haar Cascade classifier for face detection
 3) The dlib face detector and shape predictor are loaded using the provided files
-4) In a main loop of code
-   Each frame is read from the webcam and flipped.
-   Facial points are detected using both the Haar Cascade classifier and the dlib face detector.
-Rectangles are drawn around detected faces.
-   For each detected face:
-     >Facial landmarks are extracted using the shape predictor.
-     >Eye aspect ratio is calculated for both eyes.
-     >Convex hulls are used to draw contours around the eyes.
-     >If the average eye aspect ratio is below the threshold, the drowsiness counter is incremented.
-     >If the counter exceeds the specified consecutive frames threshold, an alarm sound is played, and a warning message is displayed on the frame.
-    >If the eye aspect ratio is above the threshold, the counter is reset, and the alarm sound is stopped.
-    >The video feed is displayed, and if the 'q' key is pressed, the loop is exited.
+4) In a main loop of code Each frame is read from the webcam and flipped.
+5)Facial points are detected using both the Haar Cascade classifier and the dlib face detector.
+6)Rectangles are drawn around detected faces.
+7)For each detected face:
+8)Facial landmarks are extracted using the shape predictor.Eye aspect ratio is calculated for both eyes.Convex hulls are used to draw contours around the eyes.If the average eye aspect ratio is below the threshold, the drowsiness counter is incremented.If the counter exceeds the specified consecutive frames threshold, an alarm sound is played, and a warning message is displayed on the frame.If the eye aspect ratio is above the threshold, the counter is reset, and the alarm sound is stopped.
+9)The video feed is displayed, and if the 'q' key is pressed, the loop is exited.
 This algorithm continuously monitors the eye aspect ratio to determine if a person is drowsy, triggering an alarm when necessary. The dlib library is used for accurate facial landmark detection, and OpenCV is used for video capture and visualization.
-**EXECUTION**
-**Image for detecting eyes and face**
+## EXECUTION
+## Image for detecting eyes and face
 
 ![web_cam_face_detection](https://github.com/Harinithiruveedula05/Driver-Drowsiness-detection-and-alerting-system/assets/152847148/4f9892c8-4121-4c20-a71b-71c9bbf06194)
 
-**Image for detecting drowsiness**
+## Image for detecting drowsiness
 
 ![drowsiness_detection](https://github.com/Harinithiruveedula05/Driver-Drowsiness-detection-and-alerting-system/assets/152847148/e7eadf57-5825-4bd6-8b2d-6343945b2213)
 
