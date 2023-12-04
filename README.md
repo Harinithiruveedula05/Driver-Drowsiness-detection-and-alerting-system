@@ -2,7 +2,7 @@
 Driver Drowsiness detection and alerting system detects if a driver is drowsy or not  using their eye moments and alerts them. This Script detects if a person is drowsy or not,using dlib and eye aspect ratio calculations. Uses webcam video feed as input.
 ## OBJECTIVE :
 According to the National Highway Traffic Safety Administration, every year about 100,000 police-reported crashes involve drowsy driving. These crashes result in more than 1,550 fatalities and 71,000 injuries. The real number may be much higher, however, as it is difficult to determine whether a driver was drowsy at the time of a crash. So, we tried to build a system, that detects whether a person is drowsy and alert him.
-## HERE 
+**HERE** 
 The program contains 3 files, which are
 ## Files
 **face_and_eye_detector_single_image.py** -Detects face and eye from a single image.
