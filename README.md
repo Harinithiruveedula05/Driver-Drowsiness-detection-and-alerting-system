@@ -1,17 +1,17 @@
 # Driver-Drowsiness-detection-and-alerting-system
-Driver Drowsiness detection and alerting system detects if a driver is drowsy or not  using their eye moments and alerts them.
-This Script detects if a person is drowsy or not,using dlib and eye aspect ratio calculations. Uses webcam video feed as input.
-OBJECTIVE :
+Driver Drowsiness detection and alerting system detects if a driver is drowsy or not  using their eye moments and alerts them. This Script detects if a person is drowsy or not,using dlib and eye aspect ratio calculations. Uses webcam video feed as input.
+## OBJECTIVE :
 According to the National Highway Traffic Safety Administration, every year about 100,000 police-reported crashes involve drowsy driving. These crashes result in more than 1,550 fatalities and 71,000 injuries. The real number may be much higher, however, as it is difficult to determine whether a driver was drowsy at the time of a crash. So, we tried to build a system, that detects whether a person is drowsy and alert him.
-HERE 
+## HERE 
 The program contains 3 files, which are
 ## Files
-1)**face_and_eye_detector_single_image.py** -Detects face and eye from a single image.
-2)**face_and_eye_detector_webcam_video.py** -Detects face and eye in a webcam feed by user.
-3)**drowsiness_detect.py** - Shows demo ( It detects the driver drowsiness and alert them by producing an alert based on our threshold value 
+**face_and_eye_detector_single_image.py** -Detects face and eye from a single image.
+**face_and_eye_detector_webcam_video.py** -Detects face and eye in a webcam feed by user.
+**drowsiness_detect.py** - Shows demo ( It detects the driver drowsiness and alert them by producing an alert based on our threshold value 
 ## Requirements
-> IMPORTANT
+**IMPORTANT**
 Download `shape_predictor_68_face_landmarks.dat.bz2` from [Shape Predictor 68 features](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)                                                       Extract the file in the project folder using ``bzip2 -dk shape_predictor_68_face_landmarks.dat.bz2``
+**REQUIREMENTS**
 numpy==1.15.2
 dlib==19.16.0
 pygame==1.9.4
@@ -54,9 +54,12 @@ Rectangles are drawn around detected faces.
     >The video feed is displayed, and if the 'q' key is pressed, the loop is exited.
 This algorithm continuously monitors the eye aspect ratio to determine if a person is drowsy, triggering an alarm when necessary. The dlib library is used for accurate facial landmark detection, and OpenCV is used for video capture and visualization.
 **EXECUTION**
-   Image for detecting eyes and face
+**Image for detecting eyes and face**
+
 ![web_cam_face_detection](https://github.com/Harinithiruveedula05/Driver-Drowsiness-detection-and-alerting-system/assets/152847148/4f9892c8-4121-4c20-a71b-71c9bbf06194)
-Image for detecting drowsiness
+
+**Image for detecting drowsiness**
+
 ![drowsiness_detection](https://github.com/Harinithiruveedula05/Driver-Drowsiness-detection-and-alerting-system/assets/152847148/e7eadf57-5825-4bd6-8b2d-6343945b2213)
 
      
